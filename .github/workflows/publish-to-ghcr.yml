@@ -33,6 +33,9 @@ jobs:
           WITH_V: true
 
       - name: Build image
+        env:
+            REACT_APP_AUTH_API_URL: ${{ secrets.AUTH_API_URL }}
+            REACT_APP_GATEWAY_API_URL: ${{ secrets.GATEWAY_API_URL }}
         run: docker build . --file Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
