@@ -9,7 +9,7 @@ export const checkLoginStatus = (callback) => {
   if (TOKEN) {
     axios.post(`${AUTH_API_URL}/authenticate`, { token: TOKEN })
       .then(response => {
-        console.log(response.headers['x-access-token'])
+        // console.log(response.headers['x-access-token'])
         callback(response.data)
       })
       .catch((err) => callback(null, err));
@@ -20,7 +20,7 @@ export const checkLoginStatus = (callback) => {
 export const signInWithEmailAndPassword = (email, password, callback, errorCallback = () => { }) => {
   axios.post(`${AUTH_API_URL}/login`, { email, password })
     .then(response => {
-      console.log(response.headers['x-access-token'])
+      // console.log(response.headers['x-access-token'])
       // Cookies.set(TOKEN_COOKIE_KEY, response.headers['x-access-token'])
       Cookies.set(TOKEN_COOKIE_KEY, response.data.token)
       console.log(response.data)
@@ -40,7 +40,7 @@ export const signInWithEmailAndPassword = (email, password, callback, errorCallb
 export const createUserWithEmailAndPassword = (accountDetails, callback, errorCallback = () => { }) => {
   axios.post(`${AUTH_API_URL}/register`, accountDetails)
     .then(response => {
-      console.log(response.headers['x-access-token'])
+      // console.log(response.headers['x-access-token'])
       // Cookies.set(TOKEN_COOKIE_KEY, response.headers['x-access-token'])
       Cookies.set(TOKEN_COOKIE_KEY, response.data.token)
       callback(response.data)
