@@ -58,6 +58,6 @@ jobs:
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-          AUTH_API_URL: ${{ secrets.AUTH_API_URL }}
-          GATEWAY_API_URL: ${{ secrets.GATEWAY_API_URL }}
+          REACT_APP_AUTH_API_URL: ${{ secrets.AUTH_API_URL }}
+          REACT_APP_GATEWAY_API_URL: ${{ secrets.GATEWAY_API_URL }}
         # timeout-minutes: 1
