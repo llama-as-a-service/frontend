@@ -1,40 +1,40 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import * as ROUTES from "../../config/routeConstants"
-import useAuth from "../../context/AuthContext/AuthContext"
+// import useAuth from "../../context/AuthContext/AuthContext"
 // import Logo from "assets/Logo.png"
 
 const Navbar = () => {
-  const { currentUser, logoutUser } = useAuth()
+  // const { currentUser, logoutUser } = useAuth()
 
-  const WhenLoggedIn = () => (
-    <>
-      <button
-        onClick={logoutUser}
-        className="button is-link has-text-centered is-2"
-      >
-        Log Out
-      </button>
-    </>
-  )
+  // const WhenLoggedIn = () => (
+  //   <>
+  //     <button
+  //       onClick={logoutUser}
+  //       className="button is-link has-text-centered is-2"
+  //     >
+  //       Log Out
+  //     </button>
+  //   </>
+  // )
 
-  const PromptSignIn = () => (
-    <>
-      <Link
-        to={ROUTES.LOGIN}
-        className="navbar-item button is-info has-text-centered m-2"
-      >
-        <p>Login</p>
-      </Link>
+  // const PromptSignIn = () => (
+  //   <>
+  //     <Link
+  //       to={ROUTES.LOGIN}
+  //       className="navbar-item button is-info has-text-centered m-2"
+  //     >
+  //       <p>Login</p>
+  //     </Link>
 
-      <Link
-        to={ROUTES.SIGNUP}
-        className="navbar-item button is-link has-text-centered m-2"
-      >
-        <p>Signup</p>
-      </Link>
-    </>
-  )
+  //     <Link
+  //       to={ROUTES.SIGNUP}
+  //       className="navbar-item button is-link has-text-centered m-2"
+  //     >
+  //       <p>Signup</p>
+  //     </Link>
+  //   </>
+  // )
 
   return (
     <>
@@ -55,7 +55,7 @@ const Navbar = () => {
             >
               <p>Source Code</p>
             </Link>
-            {(currentUser) ? <WhenLoggedIn /> : <PromptSignIn />}
+            {/* {(currentUser) ? <WhenLoggedIn /> : <PromptSignIn />} */}
           </div>
         </div>
       </nav>

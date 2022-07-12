@@ -61,8 +61,8 @@ const AccountForm = (props) => {
               <h2 className="title">{FormTitle}</h2>
 
               {errorMessage && (
-                <div class="notification is-danger">
-                  <button class="delete" onClick={() => setErrorMessage("")}></button>
+                <div className="notification is-danger">
+                  <button className="delete" onClick={() => setErrorMessage("")}></button>
                   {errorMessage}
                 </div>
               )}

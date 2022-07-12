@@ -5,7 +5,7 @@ import * as ROUTES from "../../config/routeConstants"
 import { useNavigate } from "react-router-dom";
 
 export const AuthContext = React.createContext()
-const startUser = null
+const startUser = {}  // SHOULD BE null
 
 export const AuthProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(startUser)
