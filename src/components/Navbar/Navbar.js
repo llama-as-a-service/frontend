@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="navbar-end">
           <div className="navbar-item">
             <Link
-              to={ROUTES.SIGNUP}
+              to="https://github.com/llama-as-a-service"
               className="navbar-item button is-info has-text-centered m-2"
             >
               <p>Source Code</p>
