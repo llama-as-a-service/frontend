@@ -4,6 +4,12 @@
 
 Frontend webapp for LaaS. Built with React, Bulma, and Docker. Gateway API.
 
+> ⚠️ Heroku Deployment may be depreciated
+
+## 🎥 Walkthrough Video
+
+[![YouTube Video](https://user-images.githubusercontent.com/60903378/202875326-30bc7b91-3bf3-48be-a688-c74493fb4964.png)](https://www.youtube.com/watch?v=uDQUA_JTMJk)
+
 ## ⚙️ Setup
 ```sh
 $ git clone https://github.com/llama-as-a-service/frontend.git
